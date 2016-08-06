@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/act_main_stats_list_relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+
+        <TextView
+            android:id="@+id/act_main_stats_list_textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Updating"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/act_main_stats_list_textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/act_main_stats_list_textView1"
+            android:layout_alignBottom="@+id/act_main_stats_list_textView1"
+            android:layout_alignParentRight="true"
+            android:text="46 %"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/act_main_stats_list_progressBar1"
+            android:layout_marginTop="10dp"
+            android:background="#aaffff"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/act_main_stats_list_progressBar1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/act_main_stats_list_textView2"
+            android:layout_marginTop="5dp"
+            android:max="100"
+            android:progress="50" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/act_main_stats_list_opt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp" >
+
+        <RadioGroup
+        android:id="@+id/act_main_stats_list_radiogrp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <RadioButton
+            android:id="@+id/act_main_stats_list_radioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text=" Sub" />
+
+        <RadioButton
+            android:id="@+id/act_main_stats_list_radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text=" Type" />
+
+        <RadioButton
+            android:id="@+id/act_main_stats_list_radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:gravity="center"
+            android:text="All" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <ExpandableListView
+        android:id="@+id/act_main_stats_list_expandableListView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/act_main_stats_list_opt"
+        android:layout_below="@+id/act_main_stats_list_relativeLayout1"
+        android:descendantFocusability="afterDescendants"
+        tools:listitem="@layout/stats_list_item" >
+
+    </ExpandableListView>
+
+</RelativeLayout>

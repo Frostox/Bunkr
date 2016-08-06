@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.vosaye.bunkr"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/header_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:background="#00A2E8"
+        android:paddingTop="12dp"
+        android:orientation="vertical" >
+
+        
+        
+        <com.vosaye.bunkr.externalpackages.master.TitleFlowIndicator
+            android:id="@+id/title_viewflowindicator"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:footerColor="#99CC00"
+            app:footerLineHeight="1dp"
+            app:footerTriangleHeight="8dp"
+            app:selectedColor="#000000"
+            app:selectedSize="16dp"
+            app:textColor="#aaaaaa"
+            app:textSize="12sp"
+            app:titlePadding="10dp" />
+    </LinearLayout>
+
+    <com.vosaye.bunkr.externalpackages.master.ViewFlow_Master
+        android:id="@+id/title_viewflow"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:duplicateParentState="true" />
+
+</LinearLayout>

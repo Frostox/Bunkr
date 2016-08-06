@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="15dp"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/help_image_imageView1" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/help_image_textView2"
+        android:layout_below="@+id/help_image_textView3"
+        android:layout_centerHorizontal="true"
+        android:alpha="0.65"
+        android:src="@drawable/here" />
+
+    <TextView
+        android:id="@+id/help_image_textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Additional info"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/help_image_textView2"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/help_image_textView1"
+        android:layout_centerHorizontal="true"
+        android:text="Subtitle of help"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/help_image_textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:text="Title of help"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

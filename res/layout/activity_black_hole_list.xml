@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BlackHoleList"
+    android:focusableInTouchMode="true" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentTop="true" >
+
+        <Spinner
+            android:id="@+id/abhl_sub"
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:listitem="@android:layout/simple_spinner_item" />
+
+        <Spinner
+            android:id="@+id/abhl_typ"
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:listitem="@android:layout/simple_spinner_item" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/abhl_holder"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:orientation="horizontal" >
+
+    <EditText
+        android:id="@+id/abhl_att"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:padding="2dp"
+        android:hint="Attendance"
+        android:inputType="number"
+        android:ems="10" >
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/abhl_total"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:inputType="number"
+        android:ems="10"
+        android:padding="2dp"
+        android:layout_weight="0.5"
+        android:hint="Total" />
+
+    <Button
+        android:id="@+id/abhl_add"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="74dp"
+        android:layout_height="match_parent"
+        android:padding="2dp"
+        android:background="@drawable/button_background_selector"
+        android:text="  Add  " />
+	</LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/abhl_dividers"
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"
+        android:background="#aaaaaa"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/abhl_holder"
+        android:layout_marginTop="14dp"
+        android:orientation="vertical" >
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/abhl_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/abhl_dividers" >
+
+    </ListView>
+
+</RelativeLayout>

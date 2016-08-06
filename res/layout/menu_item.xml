@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="3dp"
+    android:focusable="false">
+
+    <ImageView
+        android:id="@+id/menu_item_imageView1s"
+        android:focusable="false"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:padding="3dp"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/selecteditem" />
+
+    <TextView
+        android:id="@+id/menu_item_dividers"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:focusable="false"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/menu_item_textView1s"
+        android:text=" "
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/menu_item_textView1s"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:focusable="false"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@+id/menu_item_imageView1s"
+        android:text="MenuItem"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff" 
+        />
+
+</RelativeLayout>

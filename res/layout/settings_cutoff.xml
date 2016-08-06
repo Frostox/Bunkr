@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp" >
+
+    <TextView
+        android:id="@+id/settings_cutoff_textView1s"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Cut off percentage :"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/settings_cutoff_textView2s"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/settings_cutoff_textView1s"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:text="75%"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <SeekBar
+        android:id="@+id/settings_cutoff_seekBar1s"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/settings_cutoff_textView1s"
+        android:layout_below="@+id/settings_cutoff_textView1s"
+        android:layout_marginTop="32dp" />
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#afafaf" >
+
+    <ScrollView
+        android:id="@+id/today_scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.vosaye.bunkr.customviews.Timeline
+            android:id="@+id/today_timeline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             >
+        </com.vosaye.bunkr.customviews.Timeline>
+    </ScrollView>
+
+</LinearLayout>

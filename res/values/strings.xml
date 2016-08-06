@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Bunkr</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_trial">TrialActivity</string>
+    <string name="title_activity_registwer">RegistwerActivity</string>
+    <string name="title_activity_schedule_list">ScheduleListActivity</string>
+    <string name="title_activity_tos">TOS</string>
+    <string name="title_activity_editalls">Create Timetable</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="title_activity_structure">StructureActivity</string>
+    <string name="title_activity_black_hole_list">BlackHoleList</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="title_activity_black_hole">BlackHoleActivity</string>
+    <string name="title_activity_week_day_structure">WeekDayStructure</string>
+    <string name="title_activity_blank">BlankActivity</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_here">Here</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_backups">Backups</string>
+    <string name="title_activity_test_for_picker">TestForPicker</string>
+    <string name="title_activity_about">About</string>
+    <string name="title_activity_help">HelpActivity</string>
+	<string name="license_sqlitecipher">
+	   
+
+http://sqlcipher.net\n\n\n
+Copyright &#169; 2010 Zetetic LLC
+All rights reserved.
+\n\n
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:\n
+* Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.\n
+* Redistributions in binary form must reproduce the above copyright
+notice, this list of conditions and the following disclaimer in the
+documentation and/or other materials provided with the distribution.\n
+* Neither the name of the ZETETIC LLC nor the
+names of its contributors may be used to endorse or promote products
+derived from this software without specific prior written permission.\n\n
+            
+            THIS SOFTWARE IS PROVIDED BY ZETETIC LLC \'\'AS IS\'\' AND ANY
+EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL ZETETIC LLC BE LIABLE FOR ANY
+DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\n
+	    
+	</string>
+	
+	<string name="license_android">
+	    http://www.apache.org/licenses/LICENSE-2.0
+	</string>
+	<string name="license_icu">
+COPYRIGHT AND PERMISSION NOTICE\n\n
+
+Copyright &#169; 1995-2014 International Business Machines Corporation and others\n
+All rights reserved.\n\n
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, provided that the above copyright notice(s) and this permission notice appear in all copies of the Software and that both the above copyright notice(s) and this permission notice appear in supporting documentation.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR HOLDERS INCLUDED IN THIS NOTICE BE LIABLE FOR ANY CLAIM, OR ANY SPECIAL INDIRECT OR CONSEQUENTIAL DAMAGES, OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+Except as contained in this notice, the name of a copyright holder shall not be used in advertising or otherwise to promote the sale, use or other dealings in this Software without prior written authorization of the copyright holder.
+	
+	</string>
+	
+</resources>

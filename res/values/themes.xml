@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- the theme applied to the application or activity -->
+    <style name="CustomActionBarTheme"
+           parent="@style/Theme.Sherlock.Light.DarkActionBar">
+        
+        <item name="actionBarTabStyle">@style/CustomActionBarTheme.TabView</item>
+    </style>
+
+    <style name="CustomActionBarTheme.TabView" parent="@style/Widget.Sherlock.ActionBar.TabView">
+        <item name="android:background">@drawable/calendar_bg_orange</item>
+    </style>
+
+   
+</resources>

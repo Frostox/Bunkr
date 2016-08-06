@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="@drawable/list_pressed"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/sch_list_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="8"
+        android:background="@drawable/schedule_list_background_selector"
+        android:clickable="false"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/sch_list_textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="5dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:text="Medium Text" 
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/sch_list_textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="2dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_marginBottom="5dp"
+            android:text="0%"
+            android:textColor="#555555" />
+
+    </LinearLayout>
+
+    <ToggleButton
+        android:id="@+id/sch_list_notificationActive"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/notification_button_selector"
+        android:checked="true"
+        android:visibility="gone"
+        android:textOff="     "
+        android:textOn="     " />
+
+    <CheckBox
+        android:id="@+id/sch_list_defaulter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/sch_list_button1"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/deletebutton_backgroundselector"
+        android:focusable="false" />
+
+</LinearLayout>

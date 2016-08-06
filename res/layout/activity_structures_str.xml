@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/str_sessionname"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/button_bck"
+    android:orientation="vertical"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp"
+    android:layout_marginRight="5dp"
+    android:paddingTop="3dp" >
+
+    <TextView
+        android:id="@+id/str_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:gravity="center|left"
+        android:text="14:00"
+        android:textColor="#000000"
+        android:paddingBottom="10dp" />
+
+    <TextView
+        android:id="@+id/str_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/str_duration"
+        android:gravity="left"
+        android:text="12:00"
+        android:textColor="#000000" />
+
+    <LinearLayout
+        android:id="@+id/str_session_divider"
+        android:orientation="vertical"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignTop="@+id/str_top"
+        android:layout_toRightOf="@+id/str_duration"
+        android:layout_marginLeft="5dp"
+        android:background="#afafaf"
+        android:layout_marginBottom="3dp" >
+
+    </LinearLayout>
+
+	<LinearLayout
+	    android:id="@+id/linearLayout1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:layout_centerVertical="true"
+	    android:layout_toRightOf="@+id/str_session_divider"
+	    android:orientation="vertical" >
+
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+
+	        <TextView
+	            android:id="@+id/str_session_subjnames"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:layout_marginBottom="3dp"
+	            android:layout_weight="1"
+	            android:gravity="center"
+	            android:text="OOSE - PRAC"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="#000000" />
+
+	    </LinearLayout>
+
+	    <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+
+	        <ToggleButton
+	            android:id="@+id/str_session_nos"
+	            style="?android:attr/buttonStyleSmall"
+	            android:layout_width="30dp"
+	            android:layout_height="30dp"
+	            android:layout_marginLeft="8dp"
+	            android:layout_marginRight="8dp"
+	            android:background="@drawable/no_selector"
+	            android:layout_centerInParent="true"
+	            android:text=" "
+	            android:textOff=" "
+	            android:textOn=" " />
+
+	        <ToggleButton
+	            android:id="@+id/str_session_dontcares"
+	            style="?android:attr/buttonStyleSmall"
+	            android:layout_width="30dp"
+	            android:layout_height="30dp"
+	            android:layout_alignParentTop="true"
+	            android:layout_toRightOf="@+id/str_session_nos"
+	            android:background="@drawable/dontcare_selector"
+	            android:text=" "
+	            android:textOff=" "
+	            android:textOn=" " />
+
+	        <ToggleButton
+	            android:id="@+id/str_session_yess"
+	            style="?android:attr/buttonStyleSmall"
+	            android:layout_width="30dp"
+	            android:layout_height="30dp"
+	            android:layout_alignParentTop="true"
+	            android:layout_toLeftOf="@+id/str_session_nos"
+	            android:background="@drawable/yes_selector"
+	            android:text=" "
+	            android:textOff=" "
+	            android:textOn=" " />
+
+	    </RelativeLayout>
+	</LinearLayout>
+	
+</RelativeLayout>

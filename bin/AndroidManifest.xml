@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vosaye.bunkr"
+    android:installLocation="internalOnly"
+    android:versionCode="7"
+    android:versionName="v1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="20" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" /> 
+
+    <application 
+        android:name=".BunKar"
+        android:allowBackup="true"
+        android:allowClearUserData="false"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Sherlock.Light.DarkActionBar">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".TrialActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Sherlock.Light.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:icon="@drawable/login"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:icon="@drawable/login"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity
+            android:name=".app.ScheduleListActivity"
+            android:icon="@drawable/schedlist"
+            android:label="@string/title_activity_schedule_list" >
+        </activity>
+        <activity
+            android:name=".app.TOS"
+            android:icon="@drawable/tosss"
+            android:label="@string/title_activity_tos" >
+        </activity>
+        <activity
+            android:name=".app.EditAllStructures"
+            android:icon="@drawable/editwhole"
+            android:label="@string/title_activity_editalls" >
+        </activity>
+        <activity
+            android:name=".app.BaseActivity"
+            android:label="@string/title_activity_base" >
+        </activity>
+
+        <service android:name=".services.ScheduleManagerService" >
+        </service>
+        <service android:name=".services.NotificationService" >
+        </service>
+        <service android:name=".services.ValidatorService" >
+        </service>
+        <service android:name=".services.MaintenanceManager" >
+        </service>
+        <service android:name=".services.NotificationReceiver" >
+        </service>
+        <service android:name=".services.Uploader" >
+        </service>
+
+        <activity
+            android:name=".app.StructureActivity"
+            android:icon="@drawable/day"
+            android:label="@string/title_activity_structure" >
+        </activity>
+        <activity
+            android:name=".app.BlackHoleList"
+            android:icon="@drawable/editwhole"
+            android:label="@string/title_activity_black_hole_list" >
+        </activity>
+        <activity
+            android:name=".app.BlackHoleActivity"
+            android:icon="@drawable/editwhole"
+            android:label="@string/title_activity_black_hole" >
+        </activity>
+        <activity
+            android:name=".app.WeekDayStructure"
+            android:icon="@drawable/weekday"
+            android:label="@string/title_activity_week_day_structure" >
+        </activity>
+        <activity
+            android:name=".BlankActivity"
+            android:label="@string/title_activity_blank" >
+        </activity>
+
+        <receiver
+            android:name=".services.BootReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".app.Here"
+            android:icon="@drawable/here"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".app.Settings"
+            android:icon="@drawable/sett"
+            android:label="@string/title_activity_settings" >
+        </activity>
+        <activity
+            android:name=".app.Backups"
+            android:icon="@drawable/backups"
+            android:label="@string/title_activity_backups" >
+        </activity>
+        <activity
+            android:name=".app.About"
+            android:icon="@drawable/here"
+            android:label="@string/title_activity_about" >
+        </activity>
+        <activity
+            android:name="com.vosaye.bunkr.app.HelpActivity"
+            android:label="@string/title_activity_help"
+            android:icon="@drawable/action_about" >
+        </activity>
+    </application>
+
+</manifest>

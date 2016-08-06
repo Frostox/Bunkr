@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/str_op"
+          android:title="1 week"
+          
+          android:showAsAction="always"  />
+    
+        
+    
+    <item android:id="@+id/str_blank"
+        android:title="Clear Table"
+        android:showAsAction="always"
+          android:icon="@drawable/backspace" />
+    
+    <item android:id="@+id/str_done_button"
+          android:title="Apply Changes"
+          android:showAsAction="always"
+          android:icon="@drawable/save" />
+    
+        
+        
+</menu>

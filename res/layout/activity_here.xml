@@ -1,0 +1,28 @@
+<android.support.v4.widget.DrawerLayout xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/here_drawer_layouts"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <FrameLayout
+            android:id="@+id/here_content_frame"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/here_listview_drawers"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#555555"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:descendantFocusability="beforeDescendants"
+        android:dividerHeight="0dp"
+        tools:listitem="@layout/menu_item" />
+
+</android.support.v4.widget.DrawerLayout>

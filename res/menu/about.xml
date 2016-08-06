@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.vosaye.bunkr.About" >
+
+	<item
+        android:id="@+id/action_License"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="License"/>
+	
+	<item
+        android:id="@+id/action_fb"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:icon="@drawable/fb"
+        android:title="Facebook"/>
+	
+	<item
+        android:id="@+id/action_in"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:icon="@drawable/in"
+        android:title="Linked In"/>
+</menu>
